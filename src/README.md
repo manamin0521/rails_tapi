@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
 * Ruby version
+2.5
 
-* System dependencies
-
-* Configuration
+* Rails version
+5.2
 
 * Database creation
 
-* Database initialization
+```
+docker-compose run rails rails db:create
+```
 
-* How to run the test suite
+* Docker起動
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+docker-compose up -d
+```
 
-* Deployment instructions
+* MySQL
+5.7
 
-* ...
+```
+docker exec -ti rails_db mysql -u root -p
+```
+
