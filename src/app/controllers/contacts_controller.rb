@@ -1,5 +1,6 @@
 class ContactsController < ApplicationController
   def new
+    @defaltUser = 2
     @contact = Contact.new 
   end
 
