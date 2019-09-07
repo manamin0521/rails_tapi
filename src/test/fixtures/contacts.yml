@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fee: 1
+  comment: MyText
+  user_id: 1
+  request-receive-time: 2019-09-07 03:59:40
+  request_user_id: 1
+  menu-id: 1
+  shop-id: 1
+
+two:
+  fee: 1
+  comment: MyText
+  user_id: 1
+  request-receive-time: 2019-09-07 03:59:40
+  request_user_id: 1
+  menu-id: 1
+  shop-id: 1
