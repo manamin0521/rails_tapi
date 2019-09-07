@@ -1,0 +1,15 @@
+<% @contact.each do |contact| %>
+
+<p> ユーザー名<%= contact.request_user_id %></p>
+<br>
+<p>お店　<%= contact.shop_id %></p>
+<br>
+<p>メニュー　<%= contact.menu_id %></p>
+<br>
+<p>備考　<%= contact.comment %></p>
+<br>
+<p>報酬<%= contact.comment %>円</p>
+<br>
+<p>受け取り日時　<%= contact.request_receive_time %></p>
+
+<% end %>
