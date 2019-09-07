@@ -10,11 +10,11 @@
         <h3>承諾しますか？</h3>
         <p></p>
         <div class="accept_details">
-          <p id="store">お店<%= @contact.shop_id %></p>
-          <p id="item_name">メニュ <%= @contact.menu_id %></p>
-          <p id="additional">追加<%= @contact.comment %></p>
-          <p id="item_price">値段 500円</p>
-          <p id="recieve_price">報酬<%= @contact.fee%></p>
+          <p id="store">お店：<%= @contact.shop_id %></p>
+          <p id="item_name">メニュ： <%= @contact.menu_id %></p>
+          <p id="additional">備考：<%= @contact.comment %></p>
+          <p id="item_price">値段： 500円</p>
+          <p id="recieve_price">報酬：<%= @contact.fee%>円</p>
           <p id="recieve_time">受け取り時間 <%= @contact.request_receive_time %></p>
         </div>
         <p></p>

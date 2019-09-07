@@ -1,9 +1,11 @@
 
-<h1>Contacts#new</h1>
 <br>
 <br>
 <br>
 <br>
+<div class="body-box">
+    <div class="row">
+    <h1>タピオカ依頼フォーム</h1>
 <%= form_with model: @contact do |f| %>
   <%= f.label :request_user_id, "ユーザー名" %>
   <%= f.text_field :request_user_id, value: @defaltUser %>
@@ -22,6 +24,10 @@
 <br>
   <%= f.label :request_receive_time, "受け取り日時" %>
   <%= f.text_field :request_receive_time %>
-<br>
+  <br>
   <%= f.submit "申請する" %>
+<br>
+        
+    </div>
+  </div>
 <% end %>
