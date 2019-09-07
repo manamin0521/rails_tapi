@@ -1,0 +1,24 @@
+<%= @contact.request_user_id %>
+, <%= @contact.shop_id %>
+, <%= @contact.menu_id %>
+, <%= @contact.comment %>
+<%= @contact.fee%>
+, <%= @contact.request_receive_time %>
+
+  <div class="body-box">
+    <div class="row">
+        <h3>承諾しますか？</h3>
+        <p></p>
+        <div class="accept_details">
+          <p id="store">お店<%= @contact.shop_id %></p>
+          <p id="item_name">メニュ <%= @contact.menu_id %></p>
+          <p id="additional">追加<%= @contact.comment %></p>
+          <p id="item_price">値段 500円</p>
+          <p id="recieve_price">報酬<%= @contact.fee%></p>
+          <p id="recieve_time">受け取り時間 <%= @contact.request_receive_time %></p>
+        </div>
+        <p></p>
+        <button type="button" id="yes_btn" class="btn btn-default btn-md" onclick="location.href='http://google.com'">はい</button>
+        <button type="button" id="no_btn" class="btn btn-default btn-md" onclick="location.href='http://google.com'">いいえ</button>
+    </div>
+  </div>

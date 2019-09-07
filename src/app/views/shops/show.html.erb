@@ -16,7 +16,8 @@
           <p>Get tapi until : <span id="waitingtime"><%= user_shop.limit_time.strftime("%H:%M") %></span></p>
         </div>
         <div class="waitinguserinfo">
-        <button type="button" id="btn" class="btn btn-default btn-sm">依頼</button>
+        <%= link_to "依頼", contacts_new_path, class: 'btn btn-default btn-sm' %>
+        <button type="button" id="btn" class="btn btn-default btn-sm" >依頼</button>
         </div>
       </div>
     </li>

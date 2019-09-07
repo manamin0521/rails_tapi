@@ -18,6 +18,18 @@ ActiveRecord::Schema.define(version: 2019_09_07_060952) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "fee"
+    t.text "comment"
+    t.integer "user_id"
+    t.datetime "request_receive_time"
+    t.integer "request_user_id"
+    t.integer "menu_id"
+    t.integer "shop_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "shops", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "brand_id"
     t.string "name"

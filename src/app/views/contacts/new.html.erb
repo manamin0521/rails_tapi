@@ -1,0 +1,27 @@
+
+<h1>Contacts#new</h1>
+<br>
+<br>
+<br>
+<br>
+<%= form_with model: @contact do |f| %>
+  <%= f.label :request_user_id, "ユーザー名" %>
+  <%= f.text_field :request_user_id, value: @defaltUser %>
+<br>
+  <%= f.label :shop_id, "店名" %>
+  <%= f.text_field :shop_id, value: @defaltUser %>
+<br>
+  <%= f.label :menu_id,"メニュー" %>
+  <%= f.text_field :menu_id %>
+<br>
+  <%= f.label :comment, "備考" %>
+  <%= f.text_field :comment %>
+<br>
+  <%= f.label :fee, "報酬" %>
+  <%= f.text_field :fee %>
+<br>
+  <%= f.label :request_receive_time, "受け取り日時" %>
+  <%= f.text_field :request_receive_time %>
+<br>
+  <%= f.submit "申請する" %>
+<% end %>
