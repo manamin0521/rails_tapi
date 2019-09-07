@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_id: 
+  name: MyString
+  lng: 1.5
+  lat: 1.5
+
+two:
+  parent_id: 
+  name: MyString
+  lng: 1.5
+  lat: 1.5
