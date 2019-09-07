@@ -13,7 +13,7 @@
            <p><%= user_shop.user.name %></p>
         </div>
         <div class="waitinguserinfo">
-          <p>Get tapi until : <span id="waitingtime"><%= user_shop.limit_time %></span> min</p>
+          <p>Get tapi until : <span id="waitingtime"><%= user_shop.limit_time.strftime("%H:%M") %></span></p>
         </div>
         <div class="waitinguserinfo">
         <button type="button" id="btn" class="btn btn-default btn-sm">依頼</button>
