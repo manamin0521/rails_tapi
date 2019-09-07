@@ -25,7 +25,7 @@ User.create!(
     {
         id: 3,
         name: 'manamin',
-        img: 'http://drive.google.com/uc?export=view&id=1L6oUe07cOwScJYSfGcPypm1cY6bm9NE-',
+        img: 'http://drive.google.com/uc?export=view&id=1pp6RAWG2TYdq0JQ3rgqaefCA1pgyEKpR',
         created_at: '2019-09-07 13:44:00',
         updated_at: '2019-09-07 13:44:00'
     },
