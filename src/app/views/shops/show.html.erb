@@ -1,0 +1,5 @@
+<p>今並んでいる人一覧</p>
+<% @shop.user_shops.each do |user_shop| %>
+    <%= image_tag user_shop.user.img, size: '70x70' %>
+    <%= user_shop.user.name %>
+<% end %>

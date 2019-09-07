@@ -1,8 +1,9 @@
 class CreateUserShops < ActiveRecord::Migration[5.2]
   def change
     create_table :user_shops do |t|
-      t.integer :shop_id
-      t.integer :user_id
+      t.references :user, foreign_key: true
+      t.references :shop, foreign_key: true
+      t.datetime :limit_time
 
       t.timestamps
     end
