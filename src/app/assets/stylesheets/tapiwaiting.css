@@ -1,0 +1,37 @@
+body {
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    }
+
+    .waitinglist {
+        margin-top:52px;　 /* 余白指定（navbar分） */
+        text-align: center;
+    }
+
+    .waitinguserinfo {
+      float: none;
+      display: inline-block;
+      /* background-color: black;　 調査用*/
+      padding:  20px;             /* 余白指定 */
+      height: 50px;              /* 高さ指定 */
+    }
+
+   #btn {
+      border: 1px solid #000;
+      border-radius: 5px;
+      -webkit-transition: 0.3s ease-in-out;
+         -moz-transition: 0.3s ease-in-out;
+           -o-transition: 0.3s ease-in-out;
+              transition: 0.3s ease-in-out;
+    }
+
+    #btn:hover  {
+        text-decoration: none; /* Don't do underline */
+        filter: alpha;
+      }
+
+   #userphoto {
+     width: 30px;
+     height: 30px;
+   }

@@ -1,5 +1,26 @@
 <p>今並んでいる人一覧</p>
-<% @shop.user_shops.each do |user_shop| %>
-    <%= image_tag user_shop.user.img, size: '70x70' %>
-    <%= user_shop.user.name %>
+<!-- waiting list start -->
+  <div class="waitinglist">
+  <ul class="list-group">
+  <% @shop.user_shops.each do |user_shop| %>
+    <li class="list-group-item">
+    
+      <div id="waiting_1">
+        <div class="waitinguserinfo">
+            <%= image_tag user_shop.user.img, alt: "userphoto", id: "userphoto", size: '70x70' %>
+          </div>
+        <div class="waitinguserinfo">
+           <p><%= user_shop.user.name %></p>
+        </div>
+        <div class="waitinguserinfo">
+          <p>Get tapi until : <span id="waitingtime"><%= user_shop.limit_time %></span> min</p>
+        </div>
+        <div class="waitinguserinfo">
+        <button type="button" id="btn" class="btn btn-default btn-sm">依頼</button>
+        </div>
+      </div>
+    </li>
+ <!-- waiting list end -->
 <% end %>
+  </ul>
+  </div>
