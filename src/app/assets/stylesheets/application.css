@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+ ​
+ body {
+   background-color: #EEEEEE;
+ }
+ ​
+ .body_box {
+     margin-top:52px;　 /* 余白指定（navibar分） */
+ }
+ .row {
+   height: 80%;
+   width: 80%;
+   margin: 30px 100px 20px 300px;
+   padding: 40px 50px 40px 50px;
+   background-color: white;
+   text-align: center;
+   border-radius: 10%;
+ }
+ ​
+ .body-box:hover {
+   opacity: 0.8
+ }
